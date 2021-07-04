@@ -4,11 +4,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Btree {
-    int data;
-    Btree left;
-    Btree right;
+    public int data;
+    public Btree left;
+    public Btree right;
 
-    Btree(int data) {
+    public Btree(int data) {
         this.data = data;
         left = null;
         right = null;
