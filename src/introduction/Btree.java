@@ -1,12 +1,26 @@
 package introduction;
 
 import java.util.LinkedList;
+import java.util.Objects;
 import java.util.Queue;
 
 public class Btree {
     public int data;
     public Btree left;
     public Btree right;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Btree)) return false;
+        Btree btree = (Btree) o;
+        return data == btree.data && Objects.equals(left, btree.left) && Objects.equals(right, btree.right);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(data, left, right);
+    }
 
     public Btree(int data) {
         this.data = data;
