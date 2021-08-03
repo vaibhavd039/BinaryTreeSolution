@@ -32,7 +32,7 @@ public class Btree {
         if (root == null)
             return;
         inOrderTraverse(root.left);
-        System.out.print(root.data);
+        System.out.print(root.data+"\t");
         inOrderTraverse(root.right);
     }
 
