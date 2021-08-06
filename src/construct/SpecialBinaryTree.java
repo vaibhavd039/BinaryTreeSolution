@@ -42,7 +42,7 @@ public class SpecialBinaryTree {
 
 }
 
-class Btree{
+ class Btree{
     int data;
      Btree left;
      Btree right;

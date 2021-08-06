@@ -14,6 +14,7 @@ public class DeleteTree {
         Btree.insertNewNodeLevelOder(node, 7);
         Btree.insertNewNodeLevelOder(node, 8);
         Btree.insertNewNodeLevelOder(node, 9);
+        deleteTree(node);
     }
     public static Btree deleteTree(Btree node){
         if(node==null)
