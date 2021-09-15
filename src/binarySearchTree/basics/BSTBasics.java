@@ -1,5 +1,5 @@
 package binarySearchTree.basics;
-
+//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
 public class BSTBasics {
     public static void main(String [] args){
         BSTree root = BSTree.insert(null, 6);
